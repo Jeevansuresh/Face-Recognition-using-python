@@ -6,7 +6,7 @@ import time
 engine = pyttsx3.init()
 video_capture = cv2.VideoCapture(0)
 
-cat_image = fr.load_image_file("Jeevan.jpg")
+cat_image = fr.load_image_file("Me.jpg")
 cat_face_encoding = fr.face_encodings(cat_image)[0]
 
 known_face_encondings = [cat_face_encoding]
