@@ -1,19 +1,18 @@
 import numpy as np
 import face_recognition as fr
 import cv2
-import pyttsx3
 import time
-engine = pyttsx3.init()
+
 video_capture = cv2.VideoCapture(0)
 
-cat_image = fr.load_image_file("Me.jpg")
-cat_face_encoding = fr.face_encodings(cat_image)[0]
+Jvn_image = fr.load_image_file("Me.jpg") #Rename Your Detected Face Photo as Me.jpg And Keep Both Python File And This File In The Same Script
+Jvn_face_encoding = fr.face_encodings(Jvn_image)[0]
 
-known_face_encondings = [cat_face_encoding]
-known_face_names = ["Jeevan"]
+known_face_encondings = [Jvn_face_encoding]
+known_face_names = ["Jeevan"] #Change It To  Your Name
 def speak():
-    engine.say("Hello Jeevan,Welcome")
-    engine.runAndWait()
+        print("Jeevan's Face Was Detected") #Change It To  Your Name
+
 while True: 
     ret, frame = video_capture.read()
 
@@ -48,3 +47,4 @@ while True:
 
 video_capture.release()
 cv2.destroyAllWindows()
+
