@@ -7,6 +7,21 @@ The Instructions Are Given Below And Given In Code as Comments Please Read It
 
 Instructions To Make This Project 
 
+
+Note : 
+
+Please Make Sure That You Have Installed 
+
+Dlib - pip install dlib
+
+Cmake - pip install cmake
+
+Opencv - pip install opencv
+
+Face-recognition - pip install facerecognition
+
+Visual Studio Community 2019 For C++ (Download From Microsoft Official Website)
+
 Step 1 : Create a new folder
 
 Step 2 : Download My Main Python Script 
